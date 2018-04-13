@@ -30,12 +30,16 @@ value of the Google Places field can be collected in their own fields for easier
 For instance, you may wish to collect the City, State, and/or Country values separately or collect the latitude
 and longitude values of the address.
 
-Address components can be populated into "Single Line Text" or "Hidden" fields. To collect additional address components,
-add a new field of either of these types and select the "Advanced" tab of the edit form for the new field.
-You should see a set of configuration options labeled "Populate with Google Places Address Component."
-In the "Field ID" box, enter the field ID of the "Google Places Lookup" field that you wish to populate from.
+Address components can be populated into "Single Line Text" or "Hidden" fields. 
+
+To collect additional address components,add a new field of either of these types and select the "Advanced" tab of the edit form for the new field. You should see a set of configuration options labeled "Populate with Google Places Address Component."
+
+In the "Field ID" box, enter the field ID of the "Google Places Lookup" Input field that you wish to populate from.
+
 The "Component" option should be filled with the address component you'd like to collect; for a list of possible
 components, see the "Address and Places Component Types" section of the [Geocomplete documentation][geocomplete].
+
+
 Some components include a shortened version (e.g. "RI" instead of "Rhode Island"), but by default,
 the result will contain the full version. To access the short version, append `_short` to the component type.
 For example, to collect the short value of the state value for a U.S. address, the component would be
